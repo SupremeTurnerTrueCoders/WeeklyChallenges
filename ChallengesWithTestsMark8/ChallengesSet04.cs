@@ -98,12 +98,12 @@ namespace ChallengesWithTestsMark8
             double sum = 0;
             double count = 0;
 
-            if ( numbers == null)
+            if (numbers == null)
             {
                 return 0;
             }
 
-            foreach ( var num in numbers)
+            foreach (var num in numbers)
             {
                 if (num % 2 == 0)
                 {
@@ -111,32 +111,23 @@ namespace ChallengesWithTestsMark8
                     count++;
                 }
 
-                if (count > 0)
-                {
-                    return sum / count;
-                }
-                else
-                {
-                    return 0;
-                }
+               
 
-                if ( numbers == null || numbers.Length == 0)
-                {
-                    return 0;
-                }
 
-                var n = numbers.Where(num => num % 2 == 0);
-
-                if ( n.Count() == 0 )
-                    return 0;
-                return n.Average();
             }
-            
 
-            
+            if (count > 0)
+            {
+                return sum / count;
+            }
+            else
+            {
+                return 0;
+            }
 
-            
-        
+
+
+        }
 
         public int Factorial(int number)
         {

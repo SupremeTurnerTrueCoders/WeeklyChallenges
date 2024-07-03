@@ -38,10 +38,11 @@ namespace ChallengesWithTestsMark8
                 {
                    sum += number;
                 }
+
             }
 
+            return sum % 2 != 0;
 
-           // return numbers != null && numbers.Where(x => x % 2 != 0).Sum() % 2! = 0;
         }
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
@@ -65,6 +66,7 @@ namespace ChallengesWithTestsMark8
                     isUpper = true;
                 }
             }
+            return isLetter && isDigit && isUpper;
         }
 
         public char GetFirstLetterOfString(string val)
