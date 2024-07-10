@@ -30,6 +30,8 @@ namespace ChallengesWithTestsMark8
 
             for (var i = 1; i < numbers.Length; i++)
             {
+               if (numbers[i] < numbers[i-1])
+                
                 return false;
             }
             return true;
@@ -67,7 +69,7 @@ namespace ChallengesWithTestsMark8
             {
               if (word.Trim().Length > 0) 
                 {
-                    sentence += word.Trim() + "";
+                    sentence += word.Trim() + " ";
                 }
             }
 
