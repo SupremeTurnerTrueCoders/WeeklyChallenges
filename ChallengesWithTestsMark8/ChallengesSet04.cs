@@ -29,7 +29,7 @@ namespace ChallengesWithTestsMark8
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
         {
-           var list = new List <int>() { str1.Length, str2.Length, str3.Length };
+           var list = new List <int>() { str1.Length, str2.Length, str3.Length, str4.Length };
             return list.Min();
         }
 
@@ -83,7 +83,7 @@ namespace ChallengesWithTestsMark8
                 }
             }
 
-            if ( count >= amount )
+            if ( count >= majority )
             {
                 return true;
             }
